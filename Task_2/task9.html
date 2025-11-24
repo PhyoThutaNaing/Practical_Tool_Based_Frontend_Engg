@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Background Color Changer</h1>
+
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('green')">Green</button>
+    <button onclick="changeColor('blue')">Blue</button>
+
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+</html>
+
+<!--This webpage changes the background color using JavaScript.
+Each button is connected to the changeColor() function through the onclick event.
+When a button is clicked, JavaScript updates document.body.style.backgroundColor to red, green, or blue.
+This demonstrates how HTML, CSS, and JavaScript work together to modify webpage styling dynamically.-->
